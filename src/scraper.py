@@ -1,10 +1,13 @@
+import os
 import time
 
 import requests
 from bs4 import BeautifulSoup
 from notify_run import Notify
 
-notify = Notify()
+notify = Notify(endpoint=os.environ['gradoscope_channel'])
+# notify.write_config()
+notify.send('Hello')
 universities = [['Brown', 'University'], ['Purdue', 'University'], ['Simon', 'Fraser'], ['Mcgill'], ['Toronto'],
                 ['British', 'Columbia'], ['Alberta'], ['Georgia', 'Institute'], ['Waterloo']]
 
@@ -74,6 +77,6 @@ while True:
             pass
         else:
             rows_id_dict[uni_key] = u[1:]
-        time.sleep(2)
+        time.sleep(30)
 
     time.sleep(10)
