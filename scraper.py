@@ -8,6 +8,7 @@ from notify_run import Notify
 notify = Notify(endpoint=os.environ['gradoscope_channel'])
 # notify.write_config()
 notify.send('Hello')
+print('hello')
 universities = [['Brown', 'University'], ['Purdue', 'University'], ['Simon', 'Fraser'], ['Mcgill'], ['Toronto'],
                 ['British', 'Columbia'], ['Alberta'], ['Georgia', 'Institute'], ['Waterloo']]
 
