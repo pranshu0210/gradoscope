@@ -76,7 +76,7 @@ while True:
 
             pass
         else:
-            rows_id_dict[uni_key] = u[1:]
+            rows_id_dict[uni_key] = u
         time.sleep(10)
 
     time.sleep(300)
