@@ -1,2 +1,6 @@
-# gradoscope
-A small app for getting in touch with college admission decisions
+# Gradoscope
+A small app for scraping out decision updates from gradcafe.
+
+# TODO
+- [ ] Proper Documentation
+- [ ] Handle individual decisions independently
