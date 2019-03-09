@@ -1,0 +1,4 @@
+bs4
+notify_run
+requests
+gunicorn
